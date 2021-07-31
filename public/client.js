@@ -24,7 +24,7 @@ function sendMessage(message){
     // console.log(message)
     let msg = {
         user:name,
-        message:message
+        message:message.trim()
     }
 
     appendMessage(msg,'outgoing')
@@ -32,14 +32,40 @@ function sendMessage(message){
     scrollToBottom()
 
 
+    //send server
+    socket.emit('message' ,msg)
+
+
 }
 
 
 
 function appendMessage(msg, type){
+    let mainDiv = document.createElement('div')
+    let className = type
+    mainDiv.classList.add(className, 'message')
+
+
+    let markup = `
+    
+    <h4>${msg.user}</h4>
+    <p>${msg.message}</p>
+    `
+
+
+    mainDiv.innerHTML = markup
+    message_area.appendChild(mainDiv)
+
+
 
 }
 
+
+//recive server
+socket.on('message', (msg) => {
+    appendMessage(msg, 'incoming')
+    scrollToBottom()
+})
 
 function scrollToBottom(){
     message_area.scrollTop = message_area.scrollHeight

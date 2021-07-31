@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "lokeshKumar <lokeshkumargithub@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev":"nodemon server",
+    "start":"node server"
+  },
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",

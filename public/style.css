@@ -18,7 +18,7 @@ body{
 
 section.chat_section{
     width: 800px;
-    max-width: 90px;
+    max-width: 90%;
     background:#fff;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -37,4 +37,26 @@ section.chat_section{
     color: #444;
     margin-left: 10px;
 
+}
+
+
+
+.message_area{
+    height: 500px;
+    padding:16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+
+
+#text_area{
+    width:100%;
+    border:none;
+    padding:20px;
+    font-size:16px;
+    outline:none;
+    background-color: #f1f1f1;
+    
 }

@@ -1,0 +1,33 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add express
+
+PATH: 
+  C:\Users\lokes\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\lokes\bin;C:\Users\lokes\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\lokes\AppData\Local\Programs\Python\Python39;C:\Python39\Scripts;C:\Python39;C:\Python38\Scripts;C:\Python38;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\Program Files\PuTTY;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Go\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\lokes\Desktop;C:\MinGW\bin;C:\Users\lokes\Documents\cc++;C:\Users\lokes\AppData\Roaming\Composer\vendor\bin;C:\Users\lokes\Desktop\CC++\textt.c++;C:\Users\lokes\Desktop\CC++;C:\src\flutter\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\lokes\AppData\Local\Microsoft\WindowsApps;C:\Users\lokes\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.1\bin;C:\Users\lokes\AppData\Local\GitHubDesktop\bin;C:\Users\lokes\AppData\Roaming\npm;C:\Users\lokes\AppData\Local\Yarn\bin;C:\Users\lokes\go\bin;C:\Python39\Scripts;C:\Python39;C:\Users\lokes\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\lokes\AppData\Local\Programs\Python\Python39;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.0.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:69:26)
+
+npm manifest: 
+  {
+    "name": "Chat_app_mongodb",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "lokeshKumar <lokeshkumargithub@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

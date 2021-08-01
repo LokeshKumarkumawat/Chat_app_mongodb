@@ -3,8 +3,10 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 
+const Chat = require('./models/chat')
 
 
+const mongoose = require('mongoose')
 
 
 
@@ -37,20 +39,24 @@ const io = require('socket.io')(http)
 io.on('connection',(socket) =>{
     console.log('connection connected...')
 
-    socket.on('message',(msg) =>{
-        socket.broadcast.emit('message',msg)
-        // io.emit('message',msg)
+    Chat.find().then((result) => {
+        socket.emit('database-message', result);
 
     })
+
+
+    socket.on('message',(msg) =>{
+        const message = new Chat({
+            user: msg.user,
+            message: msg.message,
+            msg_type: msg.msg_type
+        });
+        message.save().then(()=>{
+            socket.broadcast.emit('message',msg)
+            // io.emit('message',msg)
+        })
+    })
 })
-
-
-
-
-
-
-
-
 
 
 
